@@ -18,7 +18,7 @@ public delegate void CtrlCallback(Control ctrl, object obj);
             }
             else
             {
-                switch (ctrl.GetType().ToString())
+                switch (ctrl.GetType().Name)
                 {
                     case "RichTextBox":
                         RichTextBox rtb = ctrl as RichTextBox;
